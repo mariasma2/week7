@@ -1,0 +1,35 @@
+.wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+}
+.wrapper > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item1 {
+    background-color: rgb(208, 249, 155);
+    text-align: center;
+}
+.item2 {
+    background-color: rgb(241, 254, 143);
+    text-align: center;
+}
+.item3 {
+    background-color: rgb(155, 249, 221);
+    text-align: center;
+}
+.item4 {
+    background-color: rgb(181, 155, 249);
+    text-align: center;
+}
+.item5 {
+    background-color: rgb(81, 117, 236);
+    text-align: center;
+}
+.item6 {
+    background-color: rgb(249, 155, 228);
+    text-align: center;
+}
