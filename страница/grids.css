@@ -12,13 +12,464 @@ button {
     background-color: transparent;
     cursor: pointer;
 }
-.header {
-    display: grid;
-    grid-template-columns: 60px 5fr 6fr 7fr;
-    grid-template-areas: '. header-logo . header-nav ';
-    min-height: 100px;
-    align-items: center;
-    background-color: #f5f5f5;
+@media screen and (min-width: 1024px) {
+    .header {
+        display: grid;
+        grid-template-columns: 60px 5fr 6fr 7fr;
+        grid-template-areas: '. header-logo . header-nav ';
+        min-height: 100px;
+        align-items: center;
+        background-color: #f5f5f5;
+    }
+    .main {
+        display: grid;
+        grid-template-rows: 350px 170px 100px;
+        grid-template-columns: 60px 5fr 6fr 6fr;
+        background-image: url(images/IMAGE.png);
+        grid-template-areas: '. header-title header-title .' '. header-subtitle header-subtitle .' '. click . .';
+        height: 832px;
+        width: 1280px;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+    .article {
+        display: grid;
+        grid-template-rows: 100px 500px 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #f5f5f5;
+        grid-template-areas: '. . . ' '. article1-title article2-title article3-title .' '. article1-subtitle article2-subtitle article3-subtitle.';
+        height: 400px;
+    }
+    .image {
+        margin-left: 15px;
+    }
+    .header-title {
+        grid-area: header-title;
+        color: #292f36;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 96px;
+        justify-items: start;
+        align-items: start;
+        margin-top: 140px;
+    }
+    .header-subtitle {
+        grid-area: header-subtitle;
+        color: #4d5053;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+    }
+    #click {
+        grid-area: click;
+        height: 71px;
+        width: 180px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: #292f36;
+        border: 2px solid #292f36;
+        border-radius: 18px;
+        color: #f5f5f5;
+    }
+    .article1-title {
+        grid-area: article1-title;
+        width: 174px;
+        height: 39px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #292f36;
+        margin-left: 113px;
+        margin-top: 100px;
+    }
+    .article1-subtitle {
+        grid-area: article1-subtitle;
+        width: 297px;
+        height: 99px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #4d5053;
+        margin-left: 52px;
+    }
+    .article2-title {
+        grid-area: article2-title;
+        width: 111px;
+        height: 39px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #292f36;
+        margin-left: 145px;
+        margin-top: 100px;
+    }
+    .article2-subtitle {
+        grid-area: article2-subtitle;
+        width: 297px;
+        height: 99px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #4d5053;
+        margin-left: 52px;
+    }
+    .article3-title {
+        grid-area: article3-title;
+        width: 111px;
+        height: 39px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #292f36;
+        margin-left: 151px;
+        margin-top: 100px;
+    }
+    .article3-subtitle {
+        grid-area: article3-subtitle;
+        width: 297px;
+        height: 99px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #4d5053;
+        margin-left: 52px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        display: grid;
+        grid-template-columns: 60px 5fr 6fr 7fr;
+        grid-template-areas: '. header-logo . header-nav ';
+        min-height: 100px;
+        align-items: center;
+        background-color: #f5f5f5;
+    }
+    .main {
+        display: grid;
+        grid-template-rows: 350px 170px 100px;
+        grid-template-columns: 60px 5fr 6fr 6fr;
+        background-image: url(images/IMAGE.png);
+        grid-template-areas: '. header-title header-title .' '. header-subtitle header-subtitle .' '. click . .';
+        height: 832px;
+        width: 1280px;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+    .article {
+        display: grid;
+        grid-template-rows: 100px 500px 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #f5f5f5;
+        grid-template-areas: '. . . ' '. article1-title article2-title article3-title .' '. article1-subtitle article2-subtitle article3-subtitle.';
+        height: 400px;
+    }
+    .image {
+        margin-left: 15px;
+    }
+    .header-title {
+        grid-area: header-title;
+        color: #292f36;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 96px;
+        justify-items: start;
+        align-items: start;
+        margin-top: 140px;
+    }
+    .header-subtitle {
+        grid-area: header-subtitle;
+        color: #4d5053;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+    }
+    #click {
+        grid-area: click;
+        height: 71px;
+        width: 180px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: #292f36;
+        border: 2px solid #292f36;
+        border-radius: 18px;
+        color: #f5f5f5;
+    }
+    .article1-title {
+        grid-area: article1-title;
+        width: 174px;
+        height: 39px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #292f36;
+        margin-left: 113px;
+        margin-top: 100px;
+    }
+    .article1-subtitle {
+        grid-area: article1-subtitle;
+        width: 297px;
+        height: 99px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #4d5053;
+        margin-left: 52px;
+    }
+    .article2-title {
+        grid-area: article2-title;
+        width: 111px;
+        height: 39px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #292f36;
+        margin-left: 145px;
+        margin-top: 100px;
+    }
+    .article2-subtitle {
+        grid-area: article2-subtitle;
+        width: 297px;
+        height: 99px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #4d5053;
+        margin-left: 52px;
+    }
+    .article3-title {
+        grid-area: article3-title;
+        width: 111px;
+        height: 39px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #292f36;
+        margin-left: 151px;
+        margin-top: 100px;
+    }
+    .article3-subtitle {
+        grid-area: article3-subtitle;
+        width: 297px;
+        height: 99px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #4d5053;
+        margin-left: 52px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header {
+        display: grid;
+        grid-template-columns: 60px 5fr 6fr 7fr;
+        grid-template-areas: '. header-logo . header-nav ';
+        min-height: 100px;
+        align-items: center;
+        background-color: #f5f5f5;
+    }
+    .main {
+        display: grid;
+        grid-template-rows: 350px 170px 100px;
+        grid-template-columns: 60px 5fr 6fr 6fr;
+        background-image: url(images/IMAGE.png);
+        grid-template-areas: '. header-title header-title .' '. header-subtitle header-subtitle .' '. click . .';
+        height: 832px;
+        width: 1280px;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+    .article {
+        display: grid;
+        grid-template-rows: 100px 500px 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #f5f5f5;
+        grid-template-areas: '. . . ' '. article1-title article2-title article3-title .' '. article1-subtitle article2-subtitle article3-subtitle.';
+        height: 400px;
+    }
+    .image {
+        margin-left: 15px;
+    }
+    .header-title {
+        grid-area: header-title;
+        color: #292f36;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 96px;
+        justify-items: start;
+        align-items: start;
+        margin-top: 140px;
+    }
+    .header-subtitle {
+        grid-area: header-subtitle;
+        color: #4d5053;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+    }
+    #click {
+        grid-area: click;
+        height: 71px;
+        width: 180px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: #292f36;
+        border: 2px solid #292f36;
+        border-radius: 18px;
+        color: #f5f5f5;
+    }
+    .article1-title {
+        grid-area: article1-title;
+        width: 174px;
+        height: 39px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #292f36;
+        margin-left: 113px;
+        margin-top: 100px;
+    }
+    .article1-subtitle {
+        grid-area: article1-subtitle;
+        width: 297px;
+        height: 99px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #4d5053;
+        margin-left: 52px;
+    }
+    .article2-title {
+        grid-area: article2-title;
+        width: 111px;
+        height: 39px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #292f36;
+        margin-left: 145px;
+        margin-top: 100px;
+    }
+    .article2-subtitle {
+        grid-area: article2-subtitle;
+        width: 297px;
+        height: 99px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #4d5053;
+        margin-left: 52px;
+    }
+    .article3-title {
+        grid-area: article3-title;
+        width: 111px;
+        height: 39px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #292f36;
+        margin-left: 151px;
+        margin-top: 100px;
+    }
+    .article3-subtitle {
+        grid-area: article3-subtitle;
+        width: 297px;
+        height: 99px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #4d5053;
+        margin-left: 52px;
+    }
 }
 .header-logo {
     grid-area: header-logo;
@@ -52,149 +503,7 @@ button {
     color: #292f36;
     text-decoration: none;
 }
-.main {
-    display: grid;
-    grid-template-rows: 350px 170px 100px;
-    grid-template-columns: 60px 5fr 6fr 6fr;
-    background-image: url(images/IMAGE.png);
-    grid-template-areas: '. header-title header-title .' '. header-subtitle header-subtitle .' '. click . .';
-    height: 832px;
-    width: 1280px;
-    left: 0;
-    right: 0;
-    top: 0px;
-}
-.header-title {
-    grid-area: header-title;
-    color: #292f36;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 90px;
-    line-height: 96px;
-    justify-items: start;
-    align-items: start;
-    margin-top: 140px;
-}
-.header-subtitle {
-    grid-area: header-subtitle;
-    color: #4d5053;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 33px;
-}
-#click {
-    grid-area: click;
-    height: 71px;
-    width: 180px;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: #292f36;
-    border: 2px solid #292f36;
-    border-radius: 18px;
-    color: #f5f5f5;
-}
-.article {
-    display: grid;
-    grid-template-rows: 100px 500px 100px;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #f5f5f5;
-    grid-template-areas: '. . . ' '. article1-title article2-title article3-title .' '. article1-subtitle article2-subtitle article3-subtitle.';
-    height: 400px;
-}
-.article1-title {
-    grid-area: article1-title;
-    width: 174px;
-    height: 39px;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 39px;
-    text-align: center;
-    letter-spacing: 0.22px;
-    color: #292f36;
-    margin-left: 113px;
-    margin-top: 100px;
-}
-.article1-subtitle {
-    grid-area: article1-subtitle;
-    width: 297px;
-    height: 99px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 33px;
-    text-align: center;
-    letter-spacing: 0.22px;
-    color: #4d5053;
-    margin-left: 52px;
-}
-.article2-title {
-    grid-area: article2-title;
-    width: 111px;
-    height: 39px;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 39px;
-    text-align: center;
-    letter-spacing: 0.22px;
-    color: #292f36;
-    margin-left: 145px;
-    margin-top: 100px;
-}
-.article2-subtitle {
-    grid-area: article2-subtitle;
-    width: 297px;
-    height: 99px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 33px;
-    text-align: center;
-    letter-spacing: 0.22px;
-    color: #4d5053;
-    margin-left: 52px;
-}
-.article3-title {
-    grid-area: article3-title;
-    width: 111px;
-    height: 39px;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 39px;
-    text-align: center;
-    letter-spacing: 0.22px;
-    color: #292f36;
-    margin-left: 151px;
-    margin-top: 100px;
-}
-.article3-subtitle {
-    grid-area: article3-subtitle;
-    width: 297px;
-    height: 99px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 33px;
-    text-align: center;
-    letter-spacing: 0.22px;
-    color: #4d5053;
-    margin-left: 52px;
-}
-.image {
-    margin-left: 15px;
-}
+
 #image1 {
     margin-left: 10px;
     margin-right: 10px;
